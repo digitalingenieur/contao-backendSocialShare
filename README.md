@@ -6,7 +6,7 @@ This module provides a link in the [Contao](https://contao.org/) backend to shar
 Following content types are supported:
 - News
 - Events
-- Sermons (Link to my sermon extension)
+- [Sermons](https://github.com/digitalingenieur/contao-sermoner)
 
 
 Please note:
