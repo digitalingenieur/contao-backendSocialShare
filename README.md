@@ -1,7 +1,7 @@
 Backend Social Share
 ==
 
-This module provides a link in the backend to share content directly on Facebook via [Facebook sharer](https://developers.facebook.com/docs/sharing/reference/share-dialog).
+This module provides a link in the [Contao](https://contao.org/) backend to share content directly on Facebook via [Facebook sharer](https://developers.facebook.com/docs/sharing/reference/share-dialog).
 
 Following content types are supported:
 - News
