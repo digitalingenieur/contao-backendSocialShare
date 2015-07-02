@@ -1,8 +1,9 @@
 <?php
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['list']['operations']['share'] = array(
-	'label'               => &$GLOBALS['TL_LANG']['tl_calendar_events']['share'],
+	'label'               => array('',$GLOBALS['TL_LANG']['MSC']['facebookShare']),
 	'icon'                => 'assets/contao/images/facebook.gif',
+	'attributes'		  => 'onclick="window.open(this.href,\'\',\'width=640,height=380,modal=yes,left=100,top=50,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no\');return false"',
 	'button_callback'     => array('tl_calendar_events_backendContentShare', 'iconShare')
 );
 

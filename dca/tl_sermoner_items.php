@@ -1,8 +1,9 @@
 <?php
 
 	$GLOBALS['TL_DCA']['tl_sermoner_items']['list']['operations']['share'] = array(
-		'label'               => &$GLOBALS['TL_LANG']['tl_sermoner_items']['share'],
+		'label'               => array('',$GLOBALS['TL_LANG']['MSC']['facebookShare']),
 		'icon'                => 'assets/contao/images/facebook.gif',
+		'attributes'		  => 'onclick="window.open(this.href,\'\',\'width=640,height=380,modal=yes,left=100,top=50,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no\');return false"',
 		'button_callback'     => array('tl_sermoner_items_backendContentShare', 'iconShare')
 	);
 
@@ -39,6 +40,6 @@ class tl_sermoner_items_backendContentShare extends Backend
 			
 		$strLink = \Environment::get('base').sprintf($strUrl, (($objSermon->alias != '' && !$GLOBALS['TL_CONFIG']['disableAlias']) ? $objSermon->alias : $objSermon->id));
 		
-		return '<a href="https://www.facebook.com/sharer/sharer.php?u='.urlencode($strLink).'" title="'.specialchars($title).'" target="_blank"'.$attributes.'>'.Image::getHtml($icon, $label).'</a> ';
+		return '<a href="https://www.facebook.com/sharer/sharer.php?u='.urlencode($strLink).'" title="'.specialchars($title).'"'.$attributes.'>'.Image::getHtml($icon, $label).'</a> ';
 	}
 }
