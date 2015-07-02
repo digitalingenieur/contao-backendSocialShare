@@ -1,0 +1,26 @@
+{
+    "name": "digitalingenieur/contao-backendSocialShare",
+    "type": "contao-module",
+    "description": "Contao module for sharing content directly out of the backend for Contao Open Source CMS.",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Samuel Heer",
+            "homepage": "https://github.com/digitalingenieur"
+        }
+    ],
+	"support":{
+		"issues":"https://github.com/digitalingenieur/contao-backendSocialShare/issues"
+	},
+    "require": {
+		"contao/core":">=3.2,<4.0.0",
+		"contao-community-alliance/composer-plugin":"*",
+    },
+   "extra":{
+		"contao": {
+			"sources":{
+				"": "system/modules/backendSocialShare"
+			}
+		}
+   }
+}
